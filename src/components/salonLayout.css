@@ -1,0 +1,58 @@
+.chair {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.chair.unselected{
+    background-color: #e8eafe;
+    border: 1px solid #ccc;
+}
+.chair.selected{
+    background-color: #60c070; 
+    border: 1px solid #193f24;
+}
+.chair.reserved{
+    background-color: #c9a25a;
+    border: 1px solid #463d18;
+}
+.chair.bought{
+    background-color: #dd6c6c;
+    border: 1px solid #462a2a;
+}
+
+.salon-layout {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.section:nth-child(1),
+.section:nth-child(3) {
+  width: 260px;
+}
+
+.section:nth-child(2) {
+  width: 420px;
+}
+
+.section:nth-child(4) {
+  width: 630px;
+}
